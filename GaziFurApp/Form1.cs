@@ -1,5 +1,10 @@
 using System;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Text;
+using System.Drawing;
+using System.Drawing.Printing;
+using System.Linq;
 
 namespace GaziFurApp
 {
@@ -10,7 +15,8 @@ namespace GaziFurApp
             InitializeComponent();
             magazaGirdileriMenuItem.Click += (s, e) => OpenFormInPanel(new MagazaGirdileriForm());
             magazaCiktilariMenuItem.Click += (s, e) => OpenFormInPanel(new MagazaCiktilariForm());
-            konsiyeMenuItem.Click += (s, e) => OpenFormInPanel(new KonsiyeForm());
+            getirilenKonsiyeMenuItem.Click += (s, e) => OpenFormInPanel(new GetirilenKonsiyeForm());
+            emanetMenuItem.Click += (s, e) => OpenFormInPanel(new EmanetForm());
             kasaIslemleriMenuItem.Click += (s, e) => OpenFormInPanel(new KasaIslemleriForm());
             // Müşteri işlemleri alt menüleri
             musteriOlusturAltMenuItem.Click += (s, e) => OpenFormInPanel(new MusteriOlusturForm());
@@ -50,5 +56,23 @@ namespace GaziFurApp
         {
 
         }
+
+        private void getirilenKonsiyeMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+// Getirilen Konsiye (Dışardan) formu
+
+// Emanet formu
+public class EmanetForm : Form
+{
+    public EmanetForm()
+    {
+        this.Text = "Emanet";
+        this.Width = 600;
+        this.Height = 400;
     }
 }

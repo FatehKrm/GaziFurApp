@@ -84,7 +84,7 @@ namespace GaziFurApp
             // 
             // buttonYazdir
             // 
-            buttonYazdir.BackColor = Color.PaleGreen;
+            buttonYazdir.BackColor = Color.SteelBlue;
             buttonYazdir.FlatStyle = FlatStyle.Flat;
             buttonYazdir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             buttonYazdir.ForeColor = Color.Black;

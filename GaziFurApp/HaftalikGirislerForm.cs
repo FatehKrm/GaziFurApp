@@ -88,7 +88,7 @@ namespace GaziFurApp
             // 
             // buttonYazdir
             // 
-            buttonYazdir.BackColor = Color.PaleGreen;
+            buttonYazdir.BackColor = Color.SteelBlue;
             buttonYazdir.FlatStyle = FlatStyle.Flat;
             buttonYazdir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             buttonYazdir.ForeColor = Color.Black;
@@ -111,11 +111,12 @@ namespace GaziFurApp
             // 
             // labelTarihAraligi
             // 
-            labelTarihAraligi.Text = "Tarih Aralığı Seçiniz:";
             labelTarihAraligi.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             labelTarihAraligi.Location = new Point(617, 15);
-            labelTarihAraligi.Size = new Size(200, 25);
             labelTarihAraligi.Name = "labelTarihAraligi";
+            labelTarihAraligi.Size = new Size(200, 25);
+            labelTarihAraligi.TabIndex = 0;
+            labelTarihAraligi.Text = "Tarih Aralığı Seçiniz:";
             // 
             // HaftalikGirislerForm
             // 

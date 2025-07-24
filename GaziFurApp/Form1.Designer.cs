@@ -38,6 +38,8 @@
             stokEkleAltMenuItem = new ToolStripMenuItem();
             stokListeleAltMenuItem = new ToolStripMenuItem();
             konsiyeMenuItem = new ToolStripMenuItem();
+            getirilenKonsiyeMenuItem = new ToolStripMenuItem();
+            emanetMenuItem = new ToolStripMenuItem();
             kasaIslemleriMenuItem = new ToolStripMenuItem();
             katalogMenuItem = new ToolStripMenuItem();
             musteriOzgecmisMenuItem = new ToolStripMenuItem();
@@ -112,9 +114,23 @@
             // 
             // konsiyeMenuItem
             // 
+            konsiyeMenuItem.DropDownItems.AddRange(new ToolStripItem[] { getirilenKonsiyeMenuItem, emanetMenuItem });
             konsiyeMenuItem.Name = "konsiyeMenuItem";
-            konsiyeMenuItem.Size = new Size(74, 24);
-            konsiyeMenuItem.Text = "Konsiye";
+            konsiyeMenuItem.Size = new Size(142, 24);
+            konsiyeMenuItem.Text = "Konsinye İşlemleri";
+            // 
+            // getirilenKonsiyeMenuItem
+            // 
+            getirilenKonsiyeMenuItem.Name = "getirilenKonsiyeMenuItem";
+            getirilenKonsiyeMenuItem.Size = new Size(276, 26);
+            getirilenKonsiyeMenuItem.Text = "Getirilen Konsiye (Dışardan)";
+            getirilenKonsiyeMenuItem.Click += getirilenKonsiyeMenuItem_Click;
+            // 
+            // emanetMenuItem
+            // 
+            emanetMenuItem.Name = "emanetMenuItem";
+            emanetMenuItem.Size = new Size(276, 26);
+            emanetMenuItem.Text = "Emanet";
             // 
             // kasaIslemleriMenuItem
             // 
@@ -197,6 +213,8 @@
         private System.Windows.Forms.ToolStripMenuItem musteriOlusturMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stokTakibiMenuItem;
         private System.Windows.Forms.ToolStripMenuItem konsiyeMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem getirilenKonsiyeMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem emanetMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kasaIslemleriMenuItem;
         private System.Windows.Forms.ToolStripMenuItem musteriOlusturAltMenuItem;
         private System.Windows.Forms.ToolStripMenuItem musteriListeleAltMenuItem;
